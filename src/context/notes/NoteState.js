@@ -3,8 +3,7 @@ import NoteContext from "./noteContext";
 
 
 const NoteState=(props)=>{
-    // const host="http://localhost:5000"
-    const host="https://notemasterbackend.onrender.com"
+    const host=process.env.REACT_APP_BACKEND
     const notesInitial=[]
     const [notes, setNotes] = useState(notesInitial)
 
@@ -34,7 +33,6 @@ const NoteState=(props)=>{
       const json= await response.json();
       console.log(json)
       setNotes(json)
-      // showAlert("Your notes is loaded",'success')
     }
 
     // ADD note
@@ -49,7 +47,7 @@ const NoteState=(props)=>{
         body: JSON.stringify({title,description,tag}), 
       });
       const note=await response.json();
-      // console.log(json)
+
       
       console.log("Adding a new note")
       setNotes(notes.concat(note))
