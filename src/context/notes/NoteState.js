@@ -3,7 +3,7 @@ import NoteContext from "./noteContext";
 
 
 const NoteState=(props)=>{
-    const host=process.env.REACT_APP_BACKEND
+    const host="https://notemasterbackend.onrender.com"
     const notesInitial=[]
     const [notes, setNotes] = useState(notesInitial)
 
