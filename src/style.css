@@ -40,7 +40,8 @@ ol {
   /* background-color: rgba(0, 0, 0, 0.704); */
   color: white;
   /* padding: 1%; */
-  height: 10vh;
+  /* height: 10vh; */
+  padding:12px 0px;
   align-items: center;
   position: fixed;
   top: 0;
@@ -367,8 +368,8 @@ input[type]:focus{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 10%; */
-  height: 80vh;
+  margin-top: 60px;
+  /* height: 80vh; */
   /* width: 200px; */
 }
 .login input{
@@ -387,17 +388,16 @@ input:-webkit-autofill:active{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 45vh;
   background-color: #09192e;
   border-radius: 10px;
   animation: login 1s linear infinite;
   border: 3px solid #172b46;
   position: relative;
-  /* text-shadow: 20px 20px #63f5de; */
+  padding:20px 0px;
 }
-.uplog{
+/* .uplog{
   height: 50vh;
-}
+} */
 /* .inlog input[type=button]{
 
 } */
