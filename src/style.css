@@ -152,7 +152,7 @@ input {
 input::placeholder{
   color:#63f5de;
 }
-/* border:note.title.length>4&&note.description.length>4?'1px solid #172b46':'none' */
+
 input:hover{
   border:1px solid #63f5de; 
 }
